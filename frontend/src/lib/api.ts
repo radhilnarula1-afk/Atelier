@@ -36,6 +36,19 @@ export const api = {
     return res.json();
   },
 
+  googleLogin: async (idToken: string) => {
+    const res = await fetch(`${API_BASE}/auth/google`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id_token: idToken })
+    });
+    if (!res.ok) {
+      const errData = await res.json().catch(() => ({}));
+      throw new Error(errData.detail || "Google Login failed");
+    }
+    return res.json();
+  },
+
   getProfile: async () => {
     const res = await fetch(`${API_BASE}/auth/profile`, {
       headers: getHeaders()

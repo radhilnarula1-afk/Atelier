@@ -7,7 +7,7 @@ import os
 import json
 import sqlite3
 import firebase_admin
-from firebase_admin import credentials, firestore
+from firebase_admin import credentials, firestore, auth as firebase_auth
 import cloudinary
 import cloudinary.uploader
 import base64
@@ -200,6 +200,38 @@ def login(req: AuthRequest):
         raise HTTPException(status_code=400, detail="Invalid email or password.")
     token = create_access_token({"sub": user_doc.id})
     return {"token": token, "username": user_data['username'], "name": user_data.get("name", "")}
+
+class GoogleAuthRequest(BaseModel):
+    id_token: str
+
+@app.post("/auth/google")
+def google_auth(req: GoogleAuthRequest):
+    try:
+        decoded_token = firebase_auth.verify_id_token(req.id_token)
+        email = decoded_token.get("email")
+        name = decoded_token.get("name", "")
+        if not email:
+            raise HTTPException(status_code=400, detail="Google token does not contain email.")
+            
+        docs = db.collection("users").where("username", "==", email).limit(1).get()
+        if docs:
+            user_doc = docs[0]
+            user_id = user_doc.id
+            if not user_doc.to_dict().get("name") and name:
+                db.collection("users").document(user_id).update({"name": name})
+        else:
+            doc_ref = db.collection("users").document()
+            doc_ref.set({
+                "username": email,
+                "password_hash": "", 
+                "name": name
+            })
+            user_id = doc_ref.id
+            
+        token = create_access_token({"sub": user_id})
+        return {"token": token, "username": email, "name": name}
+    except Exception as e:
+        raise HTTPException(status_code=401, detail=f"Invalid Google ID Token: {str(e)}")
 
 @app.get("/auth/profile")
 def get_profile(user_id: str = Depends(get_current_user)):

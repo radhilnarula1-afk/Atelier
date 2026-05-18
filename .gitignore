@@ -1,0 +1,36 @@
+# Secrets – never commit these
+.env
+.env.local
+firebase_key.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Heavy Assets & Datasets (keeps git repo small)
+backend/scripts/temp_extraction/
+backend/dataset/train/
+backend/dataset/val/
+backend/uploads/
+backend/static/
+
+# Node / Frontend
+node_modules/
+**/node_modules/
+.next/
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/

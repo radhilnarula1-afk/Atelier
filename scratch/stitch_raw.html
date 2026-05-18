@@ -1,0 +1,362 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ATELIER ANTIGRAVITY | The Intelligent Closet</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f0eee9",
+                        "inverse-on-surface": "#f3f0eb",
+                        "surface-container-low": "#f6f3ee",
+                        "background": "#fbf9f4",
+                        "tertiary-fixed-dim": "#c7c6c6",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#c8c6c5",
+                        "on-secondary-fixed-variant": "#464746",
+                        "tertiary-container": "#1b1c1c",
+                        "secondary-fixed-dim": "#c7c6c5",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-surface": "#1b1c19",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#e3e2e2",
+                        "on-primary-container": "#858383",
+                        "surface-tint": "#5f5e5e",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-container-high": "#eae8e3",
+                        "surface-variant": "#e4e2dd",
+                        "on-surface-variant": "#444748",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#30312d",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fbf9f4",
+                        "on-secondary-fixed": "#1a1c1b",
+                        "on-primary-fixed-variant": "#474746",
+                        "surface": "#fbf9f4",
+                        "primary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "outline-variant": "#c4c7c7",
+                        "on-tertiary-container": "#848484",
+                        "secondary-fixed": "#e3e2e0",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "tertiary": "#000000",
+                        "primary-container": "#1c1b1b",
+                        "surface-container-highest": "#e4e2dd",
+                        "error-container": "#ffdad6",
+                        "outline": "#747878",
+                        "on-background": "#1b1c19",
+                        "on-secondary-container": "#626361",
+                        "secondary": "#5e5e5d",
+                        "surface-dim": "#dcdad5",
+                        "secondary-container": "#e0dfde",
+                        "primary": "#000000",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "container-max": "1440px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-md": ["DM Sans"],
+                        "nav-link": ["DM Sans"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-lg": ["DM Sans"],
+                        "label-caps": ["DM Sans"],
+                        "headline-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "nav-link": ["14px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.15em", "fontWeight": "500"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md tracking-widest text-primary">ATELIER ANTIGRAVITY</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="font-nav-link text-nav-link text-primary border-b-2 border-primary pb-1" href="#">HOME</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors" href="#">CALENDAR</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors" href="#">WARDROBE</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors" href="#">RECOMMEND</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-on-surface-variant hover:opacity-80 transition-opacity" data-icon="dark_mode">dark_mode</button>
+<span class="font-nav-link text-nav-link text-on-surface-variant cursor-pointer hover:opacity-80 transition-opacity">Sign out</span>
+</div>
+</div>
+</header>
+<main class="pt-24 overflow-x-hidden">
+<!-- Hero Section -->
+<section class="min-h-screen px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-16 py-12">
+<div class="flex-1 space-y-10 order-2 md:order-1">
+<div class="p-12 bg-surface-container-low border border-surface-variant relative">
+<span class="font-label-caps text-label-caps text-on-surface-variant block mb-4">ARCHIVE 01</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-8">The AntiGravity<br>Closet</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md leading-relaxed mb-12">Your personal inventory, digitally curated. Experience a library of style where every fiber is indexed for effortless archiving.</p>
+<button class="bg-primary text-on-primary px-10 py-4 font-label-caps text-label-caps tracking-widest hover:bg-on-surface-variant transition-all active:scale-95">
+                        BROWSE COLLECTION
+                    </button>
+</div>
+</div>
+<div class="flex-1 order-1 md:order-2 w-full">
+<div class="aspect-[4/5] w-full overflow-hidden border border-surface-variant relative group">
+<img alt="Luxury Wardrobe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A meticulously organized, luxury minimalist walk-in closet featuring cream-colored shelving and soft, recessed warm lighting. The racks are filled with high-end monochromatic garments in silk and cashmere. A central marble island displays luxury accessories, while the overall atmosphere exudes quiet luxury and editorial sophistication in a bright, modern interior." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfC83OtMQjuXjoTVMAqkEu1mVBlDS8GSud-nK86x30UyYF58Y3z7mgE7mkbc_51v4Uvu30w3Bx9Tx3ziWjt1MHQjK5r8nCyqazlAR3HNvVJM943WvMA1mDrXKhhA-vdv7ns1siM3cu6Id0VAIofIlxKudgatvOrt7Q3m7SG9jADBvA8_EPcz8olfNuV8L8ruudTPjs6YuM2BNou3NRMOymVL4Td1qiZaN-vDiI2_tfeCCLofYpwUknT62stF2UK4Oysx-brgvhGTN7">
+</div>
+</div>
+</section>
+<!-- Digital Wardrobe -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-4">
+<h2 class="font-headline-lg text-headline-lg text-primary">The Digital Archive</h2>
+<button class="flex items-center gap-2 font-label-caps text-label-caps text-primary border-b border-primary pb-1 group">
+<span class="material-symbols-outlined text-[18px]" data-icon="upload">upload</span>
+                    UPLOAD NEW ITEM
+                </button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Archive Item 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container border border-surface-variant mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A crisp, high-quality white cotton dress shirt hanging against a neutral cream background. The lighting is soft and directional, highlighting the texture of the fine weave. This studio shot maintains a high-contrast editorial look with a clean, minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuAarssFS29z-WsnK4WHWwMu1JXCN6-9k3szjK1b18HLjZzYOA_qUt19w8cEK9fSnX_zDHgfLRhgfjTr_y4WuGMUB3lrIyRPHTOHMMc3bOjVkimZu9w2rekip6f07vxlC8O5NBtM58PlgzwbqNzoxLLWAJ98ELS7xZrmrS1kQ9CNupJN5gl4TuzDyUkPMdJkpDsdPcu6tnrRGbmbdHiUw8ax1w2zWzvz4wcWCDN9P-EkG2Y2peAsNhPYvyXNQ5bDBS5HK6fZS8qqm8">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="font-label-caps text-label-caps text-white border border-white px-4 py-2">DETAILS</span>
+</div>
+</div>
+<p class="font-label-caps text-label-caps text-primary">001 — POPLIN SHIRT</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Optical White</p>
+</div>
+<!-- Archive Item 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container border border-surface-variant mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A pair of impeccably tailored black high-waisted trousers laid flat on a light grey surface. The fabric has a subtle sheen, suggesting high-quality wool or crepe. The composition is clean and artistic, emphasizing line and form in a quiet luxury style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbHSXa1snxWGMW5F4Y3UDH2S0Ji5Pr5IEakS7ubaMGeKJ31LJBOW5daTObySB7TPFYuMVTvBMWlpY9ePQ9umTRxBEWLY87MxBqIJ-F4eCmNCtxRyPacCkejHV45aaHNjNW3VG4NVTCQcP7V0SQettqL2w_CgahFfbS30XWsjLakYsvF21taXIce4gZYR5I1IBh-2RahJoP98Erswzfab-qMY63QWKHVWyPyarWZkC05N-RzqdbnWQXhDLIF0-A6eSMFxOkjP8RZlHt">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="font-label-caps text-label-caps text-white border border-white px-4 py-2">DETAILS</span>
+</div>
+</div>
+<p class="font-label-caps text-label-caps text-primary">002 — WIDE TROUSER</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Midnight Black</p>
+</div>
+<!-- Archive Item 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container border border-surface-variant mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A luxury textured leather handbag in a deep tan cognac color, captured in a minimalist studio setting. The bag features clean architectural lines and subtle gold hardware. The lighting is soft and editorial, creating a warm, premium feel consistent with the quiet luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWbvpYqxBfAMQJ-JlIaELm2AZ34pYU3gNLsvINdADcvAM57ZeynOihwltxGrERecksg8U2NAMauPXDLhjvkTywWkBp7kqFdGVgiKaXQv53_g2cBcgj5NI5qPPed90UxlwWiKWlGbvTCeZZNiR_DxRZVBYSxWLVHfnwui42-XGo1OHZKkai-hdA9WldheT47IvbPDwyiI9N7bDB5j5sHriJpbHLsVED8KLvfY-5sn_alAbWZsOIhVjJpmsFBpeavgXyvn3zNU_SYD9A">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="font-label-caps text-label-caps text-white border border-white px-4 py-2">DETAILS</span>
+</div>
+</div>
+<p class="font-label-caps text-label-caps text-primary">003 — ARCHIVE TOTE</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Cognac Leather</p>
+</div>
+<!-- Archive Item 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container border border-surface-variant mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A minimal pair of pointed-toe leather boots in black, standing against a stark white background. The leather has a soft, matte finish. The composition is highly editorial, emphasizing the sleek silhouette of the footwear in a high-contrast, modern gallery style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvQ5-NpTUg2cM1qpTAZw8hQ5OZcs30KdcF7ypZtrtgBRjvwrI_-EQcMWlSdqeKfvyiawXlI6bRDwoAJA7QaG3Wle_XtuoDXLkQ0MMj2vvApuvoDw7IkUUbFa6UZQV6wngEXlayMXMI8LrgUJfZiUusxrXvcsM0z4aD5MG_bYtMOjlvH-P74Ye79rAom1VCWO8cWNR3FXm4llumW5NLpX6lc9bVXGzY-b9NBcso52P927CyPn20ryJHwRyFXEiN_lwLgphPlmLqNc6u">
+<div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="font-label-caps text-label-caps text-white border border-white px-4 py-2">DETAILS</span>
+</div>
+</div>
+<p class="font-label-caps text-label-caps text-primary">004 — ANKLE BOOT</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Matte Calfskin</p>
+</div>
+</div>
+</section>
+<!-- AI Stylist & Weather -->
+<section class="bg-surface-container-high py-section-gap">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<h2 class="font-headline-lg text-headline-lg text-primary">Personalized for Your Vibe &amp; Weather</h2>
+<div class="p-8 bg-background border border-surface-variant flex items-center gap-8">
+<div class="text-center">
+<span class="material-symbols-outlined text-[48px] text-primary" data-icon="cloud">cloud</span>
+<p class="font-label-caps text-label-caps mt-2">CLOUDY</p>
+</div>
+<div class="h-16 w-[1px] bg-surface-variant"></div>
+<div>
+<h3 class="font-headline-md text-headline-md">Paris, 18°C</h3>
+<p class="font-body-md text-on-surface-variant">Perfect for light layering and breathable textures.</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square bg-background border border-surface-variant p-10 flex flex-col items-center justify-center text-center space-y-6 group">
+<span class="font-label-caps text-label-caps text-primary">OUTFIT OF THE DAY</span>
+<div class="w-full h-64 relative">
+<img class="absolute inset-0 w-full h-full object-contain mix-blend-multiply" data-alt="A curated outfit layout showing a beige oversized blazer, a white silk camisole, and charcoal tailored trousers. The items are arranged in a clean, flat-lay composition against a soft cream background, reflecting a sophisticated and effortless style for a cool day in Paris." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAarY356PTfck5F68R9bpkDaCXDi8E3DIMdbkknV5sX4CqnU-1cV6Dd07DeBUqidKHeJmB5Sxq_Hgf3DZ81_Xa9SzBCwZcRot8WReOInSbE4WTdanq8hBE3UyhP_Qz_dXumtvSd2RtosUOAtbSc5oBOcQsfu8fx4AussB7fFcFQ7j36DZvxph1jofKHSx57UJ5k53P9p0ikMmRfRwtI6WzE0JrKaQU96DJeCPO656cJvsR8hX7ekWk24F8yhHFfrVsb8n7CfjLTRXSW">
+</div>
+<div class="space-y-2">
+<p class="font-headline-md text-headline-md italic">"The Modern Minimalist"</p>
+<p class="font-body-md text-on-surface-variant">Silk Camisole + Structured Blazer + Relaxed Slacks</p>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 font-label-caps text-label-caps hover:opacity-90 transition-all">WEAR TODAY</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Outfit Calendar -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-16">Your Style Timeline</h2>
+<div class="grid grid-cols-1 md:grid-cols-7 border-t border-l border-surface-variant">
+<!-- Example Calendar Days -->
+<div class="border-b border-r border-surface-variant p-4 aspect-square flex flex-col justify-between hover:bg-surface-container transition-colors group">
+<span class="font-label-caps text-label-caps text-on-surface-variant">MON 12</span>
+<div class="w-full h-2/3 bg-surface-variant/30 flex items-center justify-center">
+<img class="h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all" data-alt="Small thumbnail of a high-fashion look with a long wool coat and scarf." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm_Cz4hRPWoK_87TVkoWbQBrBRe0Hm6wzDxiC2HqSaQyVbJON73AVewrY9CJB-TY_xxJHx0_7JOEsEVbvZB9w6MVk635QaK4LsnNmT_vNgelQO6KkWMZmqtvbly2mW__2Lvh7_1xoR728HRLLYbakX_cabKhor9ngO0aZlq7DKCnJK5JKVqBczyB7xDo3RM8m8txk5dV-jH84cbUn-lxMelTzcWzxkXZbZef5Sbr6GnjDQMOo1TNi9-ZYa0vwCh4QiAQHJpoP1j332">
+</div>
+</div>
+<div class="border-b border-r border-surface-variant p-4 aspect-square flex flex-col justify-between hover:bg-surface-container transition-colors group">
+<span class="font-label-caps text-label-caps text-on-surface-variant">TUE 13</span>
+<div class="w-full h-2/3 bg-surface-variant/30 flex items-center justify-center">
+<img class="h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all" data-alt="Small thumbnail of a minimalist cream knit sweater look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBas9qshkUpJuTAJuX_dadCasRMsFbQChLVl8RrAhg47ixwoAFxifJ-4cJQM9pGxEBKNYOC0TSCCVmWc55__EKj0c9GIVEYZjq-pkYGQ73xWShWsIJllYrZmySNnLBpuZtF99U2cl1xHpdRWRLYwqsrWaCJ7V5VBs2UB9Vc8-RDV7XP-OOnDL0o_jWs2rEs0kSG-EGaIqKxkmPGl-GVqxhjA9zejqNWyBEwKx1owXMeBja1dBtkYEWmGCDPM1JuZLKaKzNGlYBAZQK">
+</div>
+</div>
+<div class="border-b border-r border-surface-variant p-4 aspect-square flex flex-col justify-between bg-primary-fixed/20 group">
+<span class="font-label-caps text-label-caps text-primary font-bold">WED 14 (TODAY)</span>
+<div class="w-full h-2/3 border-2 border-dashed border-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="add">add</span>
+</div>
+</div>
+<!-- Fillers -->
+<div class="border-b border-r border-surface-variant p-4 aspect-square flex flex-col justify-between opacity-30">
+<span class="font-label-caps text-label-caps text-on-surface-variant">THU 15</span>
+</div>
+<div class="border-b border-r border-surface-variant p-4 aspect-square flex flex-col justify-between opacity-30">
+<span class="font-label-caps text-label-caps text-on-surface-variant">FRI 16</span>
+</div>
+<div class="border-b border-r border-surface-variant p-4 aspect-square flex flex-col justify-between opacity-30">
+<span class="font-label-caps text-label-caps text-on-surface-variant">SAT 17</span>
+</div>
+<div class="border-b border-r border-surface-variant p-4 aspect-square flex flex-col justify-between opacity-30">
+<span class="font-label-caps text-label-caps text-on-surface-variant">SUN 18</span>
+</div>
+</div>
+</section>
+<!-- Smart Recommend & Shop -->
+<section class="py-section-gap bg-background border-t border-surface-variant overflow-hidden">
+<div class="px-margin-desktop max-w-container-max mx-auto mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary">Complete the Look</h2>
+<p class="font-body-md text-on-surface-variant mt-2">AI-recommended pieces that harmonize with your current archive.</p>
+</div>
+<div class="flex gap-8 overflow-x-auto px-margin-desktop hide-scrollbar pb-12">
+<!-- Recommended 1 -->
+<div class="min-w-[320px] flex-shrink-0 group">
+<div class="aspect-square bg-surface-container border border-surface-variant mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A sleek gold minimalist bracelet with a structural, geometric design. Photographed in high-contrast light with deep shadows on a textured stone surface, highlighting the metallic brilliance and premium craftsmanship in a quiet luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYuPXmIJhsDJ7eiDnbSssvRdMIzXWlImvdeermFEsFc5NdDVckbSXjxlZ1eI2X9oR8BQYW_4J0CyfiQM3JZmh2GW2XGqatkoIKGh4vaIiLWkYF2j2Xf0T5tRyGvjK-F3iD9VXM-sA4njouMdK6rMmbOdjauppYNzUKW4sR-FC_TBl3c19ERUDhhBLz0o3yL11Suih26cq3wj5dHpVMgj2KJVvlX1IewX5wQQOsTfMZD23VAuURNzIvs2cmXFB15pPnAYfAUgKRQZW6">
+<div class="absolute bottom-4 left-4 right-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full bg-primary text-on-primary py-3 font-label-caps text-label-caps">SHOP SIMILAR</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-caps text-label-caps text-primary">STRUCTURED CUFF</p>
+<p class="font-body-md text-on-surface-variant">18K Polished Gold</p>
+</div>
+<span class="font-label-caps text-label-caps">$420</span>
+</div>
+</div>
+<!-- Recommended 2 -->
+<div class="min-w-[320px] flex-shrink-0 group">
+<div class="aspect-square bg-surface-container border border-surface-variant mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A pair of designer sunglasses with a classic black thick acetate frame and dark lenses. The image is a sharp, low-angle shot on a reflective surface, emphasizing the iconic silhouette and the luxury branding in a minimalist, high-end fashion style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxGZZfGf_azuHgGQuq872m5a8xbAr3bNOjGTHyisyjpnihizOJnt46lQdbLgdj0wg1D2YhqyU9t-TpDI-K954SjBXlx-hY3BQ9usS55hNdOk2YH_Ifgy5_zKDcla0obNdVMeQttf0QY2e_H9qVWh28UdFa27UkM9sYuqxD3WLUdnsn8-3unIdFEJGjE9RmAvcVm9VZZn9_U_ChKgmDyXe4ykVgzPOLqnyq6tRXuLlRVvz7TSC5WFfQJWezHyQwvkJSGu7t5kUg7gQt">
+<div class="absolute bottom-4 left-4 right-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full bg-primary text-on-primary py-3 font-label-caps text-label-caps">SHOP SIMILAR</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-caps text-label-caps text-primary">ACETATE FRAME</p>
+<p class="font-body-md text-on-surface-variant">Oversized Black</p>
+</div>
+<span class="font-label-caps text-label-caps">$310</span>
+</div>
+</div>
+<!-- Recommended 3 -->
+<div class="min-w-[320px] flex-shrink-0 group">
+<div class="aspect-square bg-surface-container border border-surface-variant mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A premium minimalist watch with a white face and a light tan leather strap. The design is clean and understated, emphasizing high-quality materials and simple elegance. Studio lighting creates a crisp, clear image against a neutral background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnls2t9Se62niyXLUU6DsyGUaGrS1Jnkn_CXfbXAsaMj8QHvrfbBCpcCfukcn9sk0cEBOO1OVGAIvxJ9XmF2vQPZ5fkb04fe25TTO-IMFM1e-cxiVZHpC67LIMiCm0i7_WKiYQuUdsxGQKkBTNzAImTtsVWrLs0pe4AByMHVZJuq16aREbmbWBU7FX3SLVpdRsqqeNSGtgWyMP19e4bCvhRairtkUIht8fF7-OnVYi2zGjud_Wn6qK2IGufvprr9l9vw5wT-6S1vd1">
+<div class="absolute bottom-4 left-4 right-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full bg-primary text-on-primary py-3 font-label-caps text-label-caps">SHOP SIMILAR</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-caps text-label-caps text-primary">CHRONO ARCHIVE</p>
+<p class="font-body-md text-on-surface-variant">Tan Leather / White Dial</p>
+</div>
+<span class="font-label-caps text-label-caps">$890</span>
+</div>
+</div>
+<!-- Recommended 4 -->
+<div class="min-w-[320px] flex-shrink-0 group">
+<div class="aspect-square bg-surface-container border border-surface-variant mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A structural luxury shoulder bag in black patent leather with sharp lines and a gold chain strap. The lighting is moody and editorial, highlighting the high-gloss finish and the architectural form of the piece in a modern luxury context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYZkvUISPzhYeYSllc-ZebOFIYDSGyF32FC2jD1T6GhWwzkrGGqZXPZ4qa7OWXVG5s3cIsk3B2a-NSPHr22RNWgRUn_JV4f4q61cv5IwJZZXeeJZjsFDJMvNhmLZg0t4H2d8_5xlrrNn6GkHjEqrpHWbEafsRDKUl_Dai8RzAhWmS40Ymj4SSUW6Txe5RtDtAA_S9mzhIWo8iltWxyT1mAPGRwBgJ738UZbeBwD-JZB9pBwwT2MzVSTwRpHA8dmw7dgwOFj9eMndjA">
+<div class="absolute bottom-4 left-4 right-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full bg-primary text-on-primary py-3 font-label-caps text-label-caps">SHOP SIMILAR</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-caps text-label-caps text-primary">PETITE ENVELOPE</p>
+<p class="font-body-md text-on-surface-variant">Patent Black Leather</p>
+</div>
+<span class="font-label-caps text-label-caps">$1,200</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-surface-variant bg-background">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-section-gap max-w-container-max mx-auto gap-8">
+<div class="font-headline-md text-headline-md text-primary">ATELIER ANTIGRAVITY</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors" href="#">PRIVACY</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors" href="#">TERMS</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors" href="#">ARCHIVE</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors" href="#">CONTACT</a>
+</div>
+<div class="font-label-caps text-label-caps text-secondary">© 2024 ATELIER ANTIGRAVITY. ALL RIGHTS RESERVED.</div>
+</div>
+</footer>
+
+
+</body></html>

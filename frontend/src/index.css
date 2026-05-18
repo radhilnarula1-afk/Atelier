@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Background: light off-white matching screenshot */
+    --background: 36 24% 97%;
+    /* Surface: slightly darker off-white for pills and cards */
+    --surface: 34 18% 94%;
+    --surface-elevated: 0 0% 100%;
+    /* Foreground: dark charcoal / almost black */
+    --foreground: 30 8% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 8% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 8% 12%;
+
+    /* Primary: solid black for main buttons */
+    --primary: 30 8% 12%;
+    --primary-foreground: 36 24% 97%;
+
+    --secondary: 34 18% 94%;
+    --secondary-foreground: 30 8% 12%;
+
+    /* Muted: gray text */
+    --muted: 34 18% 94%;
+    --muted-foreground: 30 4% 45%;
+
+    --accent: 30 8% 12%;
+    --accent-foreground: 36 24% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Border: light subtle gray */
+    --border: 30 10% 85%;
+    --input: 30 10% 85%;
+    --ring: 30 8% 12%;
+
+    --sage: 120 10% 40%;
+    --beige: 30 20% 50%;
+    --steel: 210 10% 40%;
+    --graphite: 220 10% 20%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --surface: 222.2 84% 8%;
+    --surface-elevated: 222.2 84% 12%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  .font-display { font-family: 'Playfair Display', Georgia, serif; font-optical-sizing: auto; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .grain {
+    position: relative;
+  }
+  .grain::after {
+    content: '';
+    position: absolute; inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-reveal-up {
+  animation: reveal-up 1s cubic-bezier(0.22,1,0.36,1) both;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fade-in {
+  animation: fade-in 1.2s ease-out both;
+}

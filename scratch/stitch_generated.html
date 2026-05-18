@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ATELIER AI - Digital Wardrobe</title>
+<!-- Google Fonts: Playfair Display & Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#a2d1b7",
+                    "primary-fixed-dim": "#bfc2ff",
+                    "error": "#ba1a1a",
+                    "primary-container": "#000080",
+                    "on-tertiary-fixed-variant": "#474836",
+                    "on-primary-fixed": "#00006e",
+                    "on-background": "#1d1d03",
+                    "on-secondary-fixed-variant": "#234f3b",
+                    "outline-variant": "#c6c5d5",
+                    "surface": "#fefccf",
+                    "tertiary-container": "#212313",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#464653",
+                    "surface-bright": "#fefccf",
+                    "on-surface": "#1d1d03",
+                    "surface-container-high": "#eceabe",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#4b53bc",
+                    "inverse-surface": "#323214",
+                    "secondary-container": "#bbeacf",
+                    "tertiary-fixed-dim": "#c8c8b0",
+                    "on-tertiary-container": "#898b75",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#3b6751",
+                    "tertiary": "#0b0c02",
+                    "primary": "#00003c",
+                    "primary-fixed": "#e0e0ff",
+                    "surface-container-highest": "#e6e5b9",
+                    "outline": "#767684",
+                    "surface-dim": "#dedcb1",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#f2f0c4",
+                    "inverse-on-surface": "#f5f3c7",
+                    "surface-variant": "#e6e5b9",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#e4e4cc",
+                    "on-primary-container": "#777eea",
+                    "on-secondary-fixed": "#002113",
+                    "on-tertiary-fixed": "#1b1d0e",
+                    "background": "#fefccf",
+                    "inverse-primary": "#bfc2ff",
+                    "secondary-fixed": "#bdedd2",
+                    "on-secondary-container": "#406b56",
+                    "on-primary-fixed-variant": "#3239a3",
+                    "surface-container-low": "#f8f6c9",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Mesh Gradient Background */
+        .mesh-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: #fefccf; /* Cream base */
+            background-image: 
+                radial-gradient(at 0% 0%, #dedcb1 0px, transparent 50%),
+                radial-gradient(at 100% 0%, #bbeacf 0px, transparent 50%),
+                radial-gradient(at 100% 100%, #f2f0c4 0px, transparent 50%),
+                radial-gradient(at 0% 100%, #e6e5b9 0px, transparent 50%);
+            opacity: 0.8;
+            filter: blur(60px);
+        }
+
+        /* Glassmorphism Classes */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Snap Scrolling Effect Mimicry */
+        .snap-section {
+            height: 100vh;
+            scroll-snap-align: start;
+            position: relative;
+        }
+
+        .scroll-container {
+            height: 100vh;
+            overflow-y: auto;
+            scroll-snap-type: y mandatory;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<div class="mesh-gradient"></div>
+<!-- TopAppBar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 border-b border-outline-variant/20 bg-surface/40 backdrop-blur-xl">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="menu">menu</span>
+<h1 class="font-headline-md text-headline-md tracking-widest text-primary uppercase">ATELIER AI</h1>
+</div>
+<nav class="hidden md:flex items-center gap-12">
+<a class="text-primary font-semibold border-b-2 border-primary font-headline-md text-body-md tracking-wide" href="#">Home</a>
+<a class="text-on-surface-variant/70 hover:text-primary transition-colors duration-300 font-headline-md text-body-md tracking-wide" href="#">Calendar</a>
+<a class="text-on-surface-variant/70 hover:text-primary transition-colors duration-300 font-headline-md text-body-md tracking-wide" href="#">Stylist</a>
+<a class="text-on-surface-variant/70 hover:text-primary transition-colors duration-300 font-headline-md text-body-md tracking-wide" href="#">Wardrobe</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</header>
+<main class="scroll-container no-scrollbar">
+<!-- THE MANNEQUIN REVEAL STICKY CONTAINER -->
+<div class="fixed inset-0 pointer-events-none flex items-center justify-center z-10">
+<div class="relative w-full max-w-[600px] aspect-[3/4] flex items-center justify-center">
+<!-- Base Layer Mannequin (Visible Initially) -->
+<img alt="Base Layer" class="absolute h-full w-auto object-contain transition-opacity duration-700 opacity-100" data-alt="A professional studio photograph of a minimalist mannequin figure wearing a high-end, champagne-colored silk slip dress. The lighting is soft and ethereal, emphasizing the smooth texture of the fabric. The background is a clean, minimalist off-white studio space, evoking a sense of quiet luxury and high-fashion editorial styling. The overall mood is serene and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmmXw3u2KqvVP5LqBqHp3X76KXeCC2zmGPV4MpdJciDAMX72L9GGSDjcCrLd0G_HRgLI5EylfWMF4HbclC6JHpyesidtEoXsGNw2x1ZEbySiaAAJH3c_xbXACkvUcuu-bNiiPSAKaDd3a6Jfnk77q80_yILdYXf2h9fso3QG-4PQWCDFd3UGL1VHHV78Qe3_auorq0Q9mnfvKzBDzMm9teeu7_JDB4cguSoLgmr7uVdDOPZdetppljTo8-jxFenxBDJzcLpFnla6E"/>
+<!-- Update 1: Structured Blazer (Revealed via scroll logic in JS/Animation simulation) -->
+<!-- Note: In a static HTML delivery, we represent these layers as stackable, potentially using opacity controlled by scroll -->
+<img alt="Blazer Overlay" class="absolute h-full w-auto object-contain transition-opacity duration-700 opacity-0" data-alt="A luxury navy blue structured wool blazer perfectly tailored and draped over a mannequin. The garment features sharp lapels and a subtle sheen, photographed in a high-key studio setting. The lighting creates gentle shadows that define the architectural shape of the jacket, maintaining the clean, minimalist aesthetic of a digital atelier." id="layer-blazer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7chccV8EBHcFMNvO7jE17ozjXZIQthsytvLaavktJOgvCo8NfjKbjoZInQFVMOSjKn8gpcddIAwmwvQLTHG0giETsLkZGbnwYET38f5OFe0uX2rzPAJ2vf7xjKyAQCjYHD7u1qnMsShcyQKfP7RmvIBag5g_5hohu_KsJEWv_MWhzPuMi6ih7IouN5aa0hi_AciTvVU7RjcCkrAicU8sHwVSASq9urp9lMc8HZyzng6gqyzDUJMUE0CWN8aPFkQNftxPEmQAEa-Q"/>
+<!-- Update 2: Accessories (Revealed via scroll) -->
+<img alt="Accessories Overlay" class="absolute h-full w-auto object-contain transition-opacity duration-700 opacity-0" data-alt="A close-up high-fashion photograph of a premium dark forest green leather handbag with gold hardware, paired with a silk patterned scarf. The items are displayed as if worn, with a focus on material quality and luxurious detail. The lighting is warm and directional, highlighting the grain of the leather and the luster of the silk against a soft cream background." id="layer-acc" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOosN8tS4yed78jwo0d5OnqYwhWL4jxrcLmxuL2ydsrNnbPYasJfLGoEOKCqolGbM8RGZZ7rGHKvoXJk9OedLCbhHHEMujY12EQx8FQGZxvxScvheVx3AP2DH1KDcvQjGcTSv0u7yuH7V85lxWacVcHlNsVXAGuJmIQUw6T9lDWDcs7tY7F9nnFRaG-mZI2bBGKm14t_IcIe6hK6gNNMfHxEkJNhFICQ3sP6xB9dPriglQmsHAPvqIXNiPS2t9J-AJrKhv7RqgJmU"/>
+</div>
+</div>
+<!-- Section 1: The Intelligent Closet -->
+<section class="snap-section flex items-center px-margin-desktop">
+<div class="w-1/3 z-20">
+<div class="glass-panel p-8 rounded-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary mb-4 block">Archive 01</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6">The Intelligent Closet</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Your personal inventory, digitally curated. Experience a library of style where every fiber is indexed for the perfect match.
+                    </p>
+<button class="mt-8 px-10 py-4 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest hover:opacity-90 transition-all rounded-DEFAULT">
+                        Browse Collection
+                    </button>
+</div>
+</div>
+</section>
+<!-- Section 2: AI Stylist Recommendations -->
+<section class="snap-section flex items-center justify-end px-margin-desktop">
+<div class="w-1/3 z-20">
+<div class="glass-panel p-8 rounded-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary mb-4 block">Archive 02</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6">Stylist Insights</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Precision-engineered recommendations. Our AI analyzes global trends and personal silhouettes to suggest the definitive blazer for your next engagement.
+                    </p>
+<div class="mt-8 flex gap-4">
+<div class="w-24 h-32 bg-surface-container-high rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High-quality close up of navy wool fabric texture with fine weave, representing luxury tailoring materials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe05V5HIoLic6eLhSW5C68Dc6eVIqegM9Oy2yKVrQ7OLelHpCQPt3CCMvWS5i9YVVBGfTlhLSezP5z6SEnTCMg2hnbHW-dpBXU62kEf08dIFT8VDd9Tbhq5eZEA5UCEZ-cQ1JRTvOF4YHVJz2O5_XfIdDjnheikNJ4DcK-uQfuqw9LtkarSluP_Njj43fiI_eVtFqKjhyFAsT-HhTfjYYjHXMxFimt232TsqTUF0fixGzcLfuZ0WYktAb2Fy61IKkGzBHYGd_tOQw"/>
+</div>
+<div class="w-24 h-32 bg-surface-container-high rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Detailed view of a silver designer button on a dark fabric, showcasing artisan craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPA9KgP2uzWRd3n6Vn-afQm2w7E7SqXNvRf0DuYSVOyGGFwQztIS0xMdhc0XriKQrMjzMTgJzUFIsIFXqWPjkwB1b_kxlcqTWsAQpy5dAGbsXfwBOITTe9RTPlFGbcAzuHbWdY2VW-8r0tdPQfdHb0fLWWC9aTgLCKwXGYEhHHfg5bE3kRQzwrcAAfgbUcFbv8pGqmUfGAc2zc9kAe1VT3gQc5cvFJw96bCsbOT20ThzaOJl6bOW-wHfITf3NU0yprumLLb6h880U"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Outfit Journal -->
+<section class="snap-section flex items-center px-margin-desktop">
+<div class="w-1/3 z-20">
+<div class="glass-panel p-8 rounded-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary mb-4 block">Archive 03</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6">The Journal</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Documenting the evolution of your aesthetic. From primary silhouettes to the final accent of a leather accessory.
+                    </p>
+<div class="mt-8 space-y-4">
+<div class="flex items-center gap-4 p-4 border border-outline-variant/30 rounded-lg">
+<span class="material-symbols-outlined text-secondary" data-icon="event">event</span>
+<div>
+<p class="font-label-md text-label-md text-primary">Paris Fashion Week</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">OCTOBER 12, 2024</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 border border-outline-variant/30 rounded-lg">
+<span class="material-symbols-outlined text-secondary" data-icon="history">history</span>
+<div>
+<p class="font-label-md text-label-md text-primary">Seasonal Transition</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">SEPTEMBER 30, 2024</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Shared Component - Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-full bg-surface/60 backdrop-blur-lg border-t border-outline-variant/30 md:hidden flex justify-around items-center py-4 px-margin-mobile">
+<div class="flex flex-col items-center justify-center text-primary scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider mt-1">Calendar</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary">
+<span class="material-symbols-outlined" data-icon="auto_fix_high">auto_fix_high</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider mt-1">Stylist</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary">
+<span class="material-symbols-outlined" data-icon="checkroom">checkroom</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider mt-1">Wardrobe</span>
+</div>
+</nav>
+<!-- Floating Action Button (Only on Mobile/Tablet if context allows, but we keep it clean for high-end look) -->
+<div class="fixed bottom-24 right-8 z-50 md:hidden">
+<button class="w-14 h-14 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-xl">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</body></html>

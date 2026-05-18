@@ -1,0 +1,4061 @@
+{
+  "dataset\\val\\hoodies_and_sweatshirts\\0036.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\hoodies_and_sweatshirts\\0037.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "streetwear"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\hoodies_and_sweatshirts\\0038.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\hoodies_and_sweatshirts\\0039.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\hoodies_and_sweatshirts\\0040.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "black",
+      "fit": "oversized",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\hoodies_and_sweatshirts\\0041.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\hoodies_and_sweatshirts\\0042.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\hoodies_and_sweatshirts\\0043.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "character",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\hoodies_and_sweatshirts\\0044.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "maroon",
+      "fit": "relaxed",
+      "print_category": "plain",
+      "theme": "sports"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\hoodies_and_sweatshirts\\0045.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jacket\\0045.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jacket\\0046.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jacket\\0047.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "multicolor",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jacket\\0048.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "pink",
+      "fit": "regular",
+      "print_category": "nature",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jacket\\0049.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "sports"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jacket\\0050.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "multicolor",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jacket\\0051.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "formal"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jacket\\0052.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jacket\\0053.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "multicolor",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "cultural"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jacket\\0054.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jacket\\0055.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "sports"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jacket\\0056.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "purple",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jeans\\0045.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jeans\\0046.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "black",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jeans\\0047.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "beige",
+      "fit": "relaxed",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jeans\\0048.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "black",
+      "fit": "relaxed",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jeans\\0049.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jeans\\0050.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "beige",
+      "fit": "baggy",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jeans\\0051.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "grey",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jeans\\0052.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jeans\\0053.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jeans\\0054.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "baggy",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jeans\\0055.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\jeans\\0056.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "baggy",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\polo\\0040.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\polo\\0041.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "olive",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\polo\\0042.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\polo\\0043.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\polo\\0044.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\polo\\0045.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\polo\\0046.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\polo\\0047.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\polo\\0048.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\polo\\0049.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "black",
+      "fit": "slim",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shirt\\0040.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "multicolor",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shirt\\0041.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "off-white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "formal"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shirt\\0042.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shirt\\0043.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "navy",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shirt\\0044.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "off-white",
+      "fit": "relaxed",
+      "print_category": "tie-dye",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shirt\\0045.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "slim",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shirt\\0046.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "maroon",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shirt\\0047.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shirt\\0048.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shirt\\0049.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "maroon",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "formal"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shorts\\0039.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "grey",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shorts\\0040.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "sports"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shorts\\0041.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shorts\\0042.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "beige",
+      "fit": "slim",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shorts\\0043.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shorts\\0044.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shorts\\0045.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "sports"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shorts\\0046.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shorts\\0047.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "sports"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shorts\\0048.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\shorts\\0049.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "sports"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\tshirt\\0046.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "maroon",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\tshirt\\0047.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "oversized",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\tshirt\\0048.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "white",
+      "fit": "slim",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\tshirt\\0049.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\tshirt\\0050.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\tshirt\\0051.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "oversized",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\tshirt\\0052.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\tshirt\\0053.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "yellow",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\tshirt\\0054.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "green",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\tshirt\\0055.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\tshirt\\0056.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\val\\tshirt\\0057.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0000.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0001.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "off-white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0002.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "olive",
+      "fit": "regular",
+      "print_category": "sports",
+      "theme": "sports"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0003.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "off-white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0004.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0005.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "multicolor",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0006.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0007.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0008.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0009.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0010.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0011.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0012.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0013.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0014.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0015.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "off-white",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0016.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0017.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "off-white",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0018.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0019.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "black",
+      "fit": "relaxed",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0020.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "grey",
+      "fit": "relaxed",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0021.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0022.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0023.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0024.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "olive",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0025.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0026.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0027.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "purple",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0028.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0029.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0030.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "off-white",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0031.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0032.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0033.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0034.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "maroon",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\hoodies_and_sweatshirts\\0035.json": {
+    "status": "success",
+    "labels": {
+      "type": "hoodies_and_sweatshirts",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0000.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0001.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0002.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0003.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0004.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0005.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "geometric",
+      "theme": "formal"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0006.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0007.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "maroon",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0008.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0009.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0010.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0011.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0012.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0013.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "pink",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0014.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0015.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0016.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0017.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0018.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0019.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0020.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0021.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0022.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0023.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0024.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0025.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "sports"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0026.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0027.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0028.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0029.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0030.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0031.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "olive",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0032.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0033.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0034.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0035.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0036.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0037.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0038.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "formal"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0039.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0040.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0041.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0042.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0043.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jacket\\0044.json": {
+    "status": "success",
+    "labels": {
+      "type": "jacket",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0000.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0001.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0002.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0003.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0004.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0005.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0006.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0007.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0008.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0009.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0010.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0011.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0012.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0013.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0014.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0015.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0016.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0017.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0018.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0019.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0020.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0021.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0022.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0023.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "navy",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0024.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0025.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0026.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0027.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0028.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0029.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\jeans\\0030.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0031.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0032.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "relaxed",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0033.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0034.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0035.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0036.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "white",
+      "fit": "baggy",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0037.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0038.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "black",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0039.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "grey",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0040.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0041.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "maroon",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0042.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "relaxed",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0043.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\jeans\\0044.json": {
+    "status": "success",
+    "labels": {
+      "type": "jeans",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0000.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0001.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0002.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "multicolor",
+      "fit": "regular",
+      "print_category": "geometric",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0003.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0004.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "green",
+      "fit": "slim",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0005.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "geometric",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0006.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0007.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0008.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0009.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "off-white",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0010.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0011.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "purple",
+      "fit": "regular",
+      "print_category": "nature",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0012.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0013.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "green",
+      "fit": "slim",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0014.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "black",
+      "fit": "slim",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0015.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0016.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0017.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0018.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0019.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0020.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "maroon",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0021.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0022.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0023.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0024.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0025.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "maroon",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0026.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "multicolor",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0027.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "off-white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0028.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "green",
+      "fit": "slim",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0029.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "white",
+      "fit": "slim",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0030.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0031.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "geometric",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0032.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0033.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "off-white",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0034.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "geometric",
+      "theme": "abstract"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0035.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "maroon",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0036.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0037.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "teal",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0038.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\polo\\0039.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0000.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "formal"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0001.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "formal"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0002.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "formal"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0003.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "slim",
+      "print_category": "pattern",
+      "theme": "formal"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0004.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "slim",
+      "print_category": "pattern",
+      "theme": "formal"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0005.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0006.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0007.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0008.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "nature",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0009.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0010.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "black",
+      "fit": "slim",
+      "print_category": "nature",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0011.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "black",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0012.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "olive",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0013.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "olive",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0014.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "maroon",
+      "fit": "slim",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0015.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "multicolor",
+      "fit": "regular",
+      "print_category": "nature",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0016.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "maroon",
+      "fit": "slim",
+      "print_category": "pattern",
+      "theme": "formal"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0017.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0018.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0019.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "maroon",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0020.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0021.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "off-white",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0022.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "orange",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0023.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0024.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "off-white",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0025.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "nature",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0026.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "maroon",
+      "fit": "slim",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0027.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0028.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0029.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0030.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0031.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0032.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0033.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0034.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0035.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0036.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "yellow",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0037.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "beige",
+      "fit": "slim",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0038.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "formal"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shirt\\0039.json": {
+    "status": "success",
+    "labels": {
+      "type": "shirt",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shorts\\0000.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shorts\\0001.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shorts\\0002.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shorts\\0003.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "sports"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shorts\\0004.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shorts\\0005.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shorts\\0006.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "sports"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shorts\\0007.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shorts\\0008.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0009.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0010.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0011.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": false
+  },
+  "dataset\\train\\shorts\\0012.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0013.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0014.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0015.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0016.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0017.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0018.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0019.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0020.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0021.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0022.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0023.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0024.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0025.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0026.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0027.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0028.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0029.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0030.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0031.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0032.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "olive",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0033.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0034.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0035.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0036.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0037.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0038.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\shorts\\0039.json": {
+    "status": "success",
+    "labels": {
+      "type": "shorts",
+      "color": "grey",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0000.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0001.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "vehicle",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0002.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0003.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "streetwear"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0004.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "teal",
+      "fit": "slim",
+      "print_category": "nature",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0005.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0006.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "brown",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0007.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "character",
+      "theme": "merchandise"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0008.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "teal",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0009.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "olive",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "sports"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0010.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "orange",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0011.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0012.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "slim",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0013.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0014.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0015.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "sports",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0016.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "orange",
+      "fit": "regular",
+      "print_category": "vehicle",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0017.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0018.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "grey",
+      "fit": "oversized",
+      "print_category": "geometric",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0019.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0020.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0021.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "grey",
+      "fit": "oversized",
+      "print_category": "character",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0022.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0023.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "geometric",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0024.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "olive",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0025.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "sports"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0026.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0027.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0028.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "geometric",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0029.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "oversized",
+      "print_category": "character",
+      "theme": "superhero"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0030.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0031.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "maroon",
+      "fit": "regular",
+      "print_category": "nature",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0032.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "green",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0033.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "figure",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0034.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0035.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0036.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "pink",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0037.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "beige",
+      "fit": "regular",
+      "print_category": "typography",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0038.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "navy",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0039.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "slim",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0040.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "green",
+      "fit": "oversized",
+      "print_category": "typography",
+      "theme": "streetwear"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0041.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "olive",
+      "fit": "regular",
+      "print_category": "pattern",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0042.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "red",
+      "fit": "regular",
+      "print_category": "vehicle",
+      "theme": "vintage"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0043.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "black",
+      "fit": "regular",
+      "print_category": "brand-logo",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0044.json": {
+    "status": "success",
+    "labels": {
+      "type": "tshirt",
+      "color": "white",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  },
+  "dataset\\train\\tshirt\\0045.json": {
+    "status": "success",
+    "labels": {
+      "type": "polo",
+      "color": "blue",
+      "fit": "regular",
+      "print_category": "plain",
+      "theme": "casual"
+    },
+    "used_fallback": true
+  }
+}

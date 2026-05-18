@@ -1,0 +1,3 @@
+@echo off
+echo Starting Wardrobe AI Full Stack Application...
+python run_app.py start

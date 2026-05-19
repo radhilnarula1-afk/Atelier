@@ -3,10 +3,9 @@ fastapi==0.110.0
 uvicorn[standard]==0.28.0
 python-multipart==0.0.9
 
-# ── ML / Vision (CPU-only builds — keeps Docker image ~300 MB not 2.5 GB) ───
---extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.2.1+cpu
-torchvision==0.17.1+cpu
+# ── ML / Vision (ONNX Runtime CPU build - extremely lightweight, < 10MB memory usage)
+onnxruntime==1.17.1
+numpy>=1.24.0
 pillow==10.2.0
 
 # ── Firebase Admin SDK ───────────────────────────────────────────────────────

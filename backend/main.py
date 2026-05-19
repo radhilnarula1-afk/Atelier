@@ -17,10 +17,8 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from contextlib import contextmanager
 
-import torch
-import torch.nn.functional as F
-import torchvision.transforms as transforms
-from torchvision import models
+import numpy as np
+import onnxruntime as ort
 from PIL import Image
 
 import jwt
@@ -42,7 +40,7 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY") or os.getenv("GEMINI_API_KEY", "")
 if not GROQ_API_KEY:
     print("Warning: GROQ_API_KEY not set. Some features will fail.")
 
-MODEL_PATH   = "models/clothing_classifier.pt"
+MODEL_PATH   = "models/clothing_classifier.onnx"
 DB_PATH      = "wardrobe.db"
 SECRET_KEY   = os.getenv("SECRET_KEY", "supersecret-wardrobe-key")
 ALGORITHM    = "HS256"
@@ -289,29 +287,26 @@ async def get_weather(location: str):
 
 # ─── ML MODEL ────────────────────────────────────────────────────────────────
 
-def build_model_head(num_outputs: int):
-    model = models.mobilenet_v2(weights=None)
-    model.classifier[1] = torch.nn.Linear(model.last_channel, num_outputs)
-    return model
+# ─── ML ONNX MODEL ───────────────────────────────────────────────────────────
 
-def load_model():
-    if os.getenv("RENDER") == "true":
-        print("Running on Render. Bypassing PyTorch model loading to conserve RAM.")
-        return None
-    total_labels = sum(len(v) for v in LABEL_CLASSES.values())
-    model = build_model_head(total_labels)
+def load_onnx_model():
     if Path(MODEL_PATH).exists():
-        model.load_state_dict(torch.load(MODEL_PATH, map_location="cpu"))
-    model.eval()
-    return model
+        try:
+            session = ort.InferenceSession(MODEL_PATH, providers=["CPUExecutionProvider"])
+            print("Successfully loaded local ONNX classifier model.")
+            return session
+        except Exception as e:
+            print(f"Failed to load ONNX model: {e}")
+            return None
+    else:
+        print(f"Warning: ONNX model file not found at {MODEL_PATH}")
+        return None
 
-clothing_model = load_model()
+onnx_session = load_onnx_model()
 
-image_transform = transforms.Compose([
-    transforms.Resize((224, 224)),
-    transforms.ToTensor(),
-    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-])
+def softmax(x):
+    e_x = np.exp(x - np.max(x))
+    return e_x / e_x.sum(axis=0)
 
 def predict_labels_with_groq(image_bytes: bytes) -> dict:
     if not groq_client:
@@ -362,34 +357,46 @@ def predict_labels_with_groq(image_bytes: bytes) -> dict:
     return json.loads(result_text)
 
 def predict_labels(image_bytes: bytes) -> dict:
-    # 1. Try Groq Vision first (efficient, 0MB RAM, supports all formats)
-    if groq_client:
+    # 1. Try local ONNX model first (uses local trained dataset/model weights, very low memory!)
+    if onnx_session is not None:
         try:
-            print("Attempting clothing classification via Groq Vision...")
-            return predict_labels_with_groq(image_bytes)
-        except Exception as e:
-            print(f"Groq Vision classification failed: {e}. Falling back...")
+            print("Attempting clothing classification via local ONNX model...")
             
-    # 2. Local PyTorch model fallback (only if model was loaded and not on Render)
-    if clothing_model is not None:
-        try:
-            print("Attempting clothing classification via local PyTorch model...")
+            # Preprocess image
             image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
-            tensor = image_transform(image).unsqueeze(0)
-            with torch.no_grad():
-                output = clothing_model(tensor)
+            image = image.resize((224, 224), Image.Resampling.BILINEAR)
+            img_data = np.array(image).astype(np.float32) / 255.0
+            img_data = np.transpose(img_data, (2, 0, 1))
+            
+            mean = np.array([0.485, 0.456, 0.406]).reshape(3, 1, 1).astype(np.float32)
+            std = np.array([0.229, 0.224, 0.225]).reshape(3, 1, 1).astype(np.float32)
+            img_data = (img_data - mean) / std
+            input_tensor = np.expand_dims(img_data, axis=0)
+            
+            # Run ONNX inference
+            outputs = onnx_session.run(["output"], {"input": input_tensor})
+            output = outputs[0]
+            
             labels = {}
             offset = 0
             for category, classes in LABEL_CLASSES.items():
                 n = len(classes)
                 scores = output[0, offset : offset + n]
-                probs = F.softmax(scores, dim=0)
-                predicted_idx = probs.argmax().item()
+                probs = softmax(scores)
+                predicted_idx = np.argmax(probs)
                 labels[category] = classes[predicted_idx]
                 offset += n
             return labels
         except Exception as e:
-            print(f"Local PyTorch model prediction failed: {e}. Falling back...")
+            print(f"Local ONNX model prediction failed: {e}. Falling back...")
+            
+    # 2. Try Groq Vision as secondary fallback (if key is set)
+    if groq_client:
+        try:
+            print("Attempting clothing classification via Groq Vision (fallback)...")
+            return predict_labels_with_groq(image_bytes)
+        except Exception as e:
+            print(f"Groq Vision classification failed: {e}. Falling back...")
             
     # 3. Static default fallback (safest fallback, 100% stable)
     print("Using static default clothing classification tags.")

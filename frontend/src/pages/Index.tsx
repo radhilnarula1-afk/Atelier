@@ -1040,7 +1040,20 @@ function RecommendView() {
                   }`}
                 >
                   <div className="aspect-[3/4] overflow-hidden bg-muted relative">
-                    <img src={api.getImageUrl(item.image_path)} className="w-full h-full object-cover" alt={item.type} />
+                    {api.getImageUrl(item.image_path) ? (
+                      <img
+                        src={api.getImageUrl(item.image_path)}
+                        className="w-full h-full object-cover"
+                        alt={item.type}
+                        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; (e.target as HTMLImageElement).nextElementSibling?.classList.remove('hidden'); }}
+                      />
+                    ) : null}
+                    <div className={`${api.getImageUrl(item.image_path) ? 'hidden' : ''} w-full h-full flex flex-col items-center justify-center gap-2 bg-gradient-to-br from-muted to-muted/50`}>
+                      <span className="text-4xl capitalize">{
+                        item.type === 'tshirt' ? '👕' : item.type === 'shirt' ? '👔' : item.type === 'jeans' ? '👖' : item.type === 'jacket' ? '🧥' : item.type === 'shorts' ? '🩳' : item.type === 'polo' ? '👕' : item.type === 'hoodies_and_sweatshirts' ? '🧥' : '👗'
+                      }</span>
+                      <span className="text-[9px] text-muted-foreground font-medium capitalize text-center px-1">{item.color} {item.type}</span>
+                    </div>
                     <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20" />
                     {isSelected && (
                       <div className="absolute top-2 right-2 bg-accent text-accent-foreground rounded-full p-0.5 shadow-soft">

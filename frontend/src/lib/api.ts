@@ -164,7 +164,10 @@ export const api = {
 
   getImageUrl: (path: string) => {
     if (!path) return "";
+    // Cloudinary and other full URLs work fine
     if (path.startsWith("http") || path.startsWith("data:")) return path;
+    // Local /uploads/ paths are ephemeral — wiped on every Render redeploy. Return empty so fallback shows.
+    if (path.startsWith("/uploads/") || path.startsWith("uploads/")) return "";
     return `${API_BASE}${path.startsWith('/') ? path : '/' + path}`;
   }
 };

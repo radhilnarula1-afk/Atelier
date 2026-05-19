@@ -113,20 +113,24 @@ if CLOUDINARY_URL:
 
 def upload_image_to_cloud(image_bytes: bytes) -> str:
     """
-    Uploads image bytes directly to Cloudinary if available.
+    Uploads image bytes to Cloudinary.
     Falls back to saving to local uploads folder if Cloudinary is not configured.
     """
     if os.getenv("CLOUDINARY_URL"):
         try:
             res = cloudinary.uploader.upload(
-                image_bytes,
+                io.BytesIO(image_bytes),          # ← wrap bytes in file-like object
                 folder="atelier_wardrobe",
-                resource_type="image"
+                resource_type="image",
+                public_id=uuid.uuid4().hex        # ← unique filename to avoid collisions
             )
-            return res.get("secure_url", "")
+            url = res.get("secure_url", "")
+            if url:
+                print(f"Cloudinary upload success: {url}")
+                return url
+            print("Cloudinary upload returned no URL.")
         except Exception as e:
             print(f"Cloudinary upload failed: {e}")
-            
     # Fallback: Save locally
     filename = f"{uuid.uuid4().hex}.jpg"
     filepath = os.path.join("uploads", filename)

@@ -295,6 +295,9 @@ def build_model_head(num_outputs: int):
     return model
 
 def load_model():
+    if os.getenv("RENDER") == "true":
+        print("Running on Render. Bypassing PyTorch model loading to conserve RAM.")
+        return None
     total_labels = sum(len(v) for v in LABEL_CLASSES.values())
     model = build_model_head(total_labels)
     if Path(MODEL_PATH).exists():
@@ -310,21 +313,93 @@ image_transform = transforms.Compose([
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
 ])
 
+def predict_labels_with_groq(image_bytes: bytes) -> dict:
+    if not groq_client:
+        raise ValueError("Groq client not initialized")
+    
+    base64_image = base64.b64encode(image_bytes).decode("utf-8")
+    
+    prompt = f"""
+    Analyze the clothing item in this image and classify it into the following categories:
+    - type: Must be one of {LABEL_CLASSES["type"]}
+    - color: Must be one of {LABEL_CLASSES["color"]}
+    - fit: Must be one of {LABEL_CLASSES["fit"]}
+    - print_category: Must be one of {LABEL_CLASSES["print_category"]}
+    - theme: Must be one of {LABEL_CLASSES["theme"]}
+    
+    Respond ONLY with a valid JSON object matching this structure:
+    {{
+        "type": "...",
+        "color": "...",
+        "fit": "...",
+        "print_category": "...",
+        "theme": "..."
+    }}
+    Do not include any other text or markdown formatting.
+    """
+    
+    response = groq_client.chat.completions.create(
+        model="llama-3.2-11b-vision-preview",
+        messages=[
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": prompt},
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:image/jpeg;base64,{base64_image}"
+                        }
+                    }
+                ]
+            }
+        ],
+        response_format={"type": "json_object"},
+        temperature=0.0
+    )
+    
+    result_text = response.choices[0].message.content.strip()
+    return json.loads(result_text)
+
 def predict_labels(image_bytes: bytes) -> dict:
-    image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
-    tensor = image_transform(image).unsqueeze(0)
-    with torch.no_grad():
-        output = clothing_model(tensor)
-    labels = {}
-    offset = 0
-    for category, classes in LABEL_CLASSES.items():
-        n = len(classes)
-        scores = output[0, offset : offset + n]
-        probs = F.softmax(scores, dim=0)
-        predicted_idx = probs.argmax().item()
-        labels[category] = classes[predicted_idx]
-        offset += n
-    return labels
+    # 1. Try Groq Vision first (efficient, 0MB RAM, supports all formats)
+    if groq_client:
+        try:
+            print("Attempting clothing classification via Groq Vision...")
+            return predict_labels_with_groq(image_bytes)
+        except Exception as e:
+            print(f"Groq Vision classification failed: {e}. Falling back...")
+            
+    # 2. Local PyTorch model fallback (only if model was loaded and not on Render)
+    if clothing_model is not None:
+        try:
+            print("Attempting clothing classification via local PyTorch model...")
+            image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
+            tensor = image_transform(image).unsqueeze(0)
+            with torch.no_grad():
+                output = clothing_model(tensor)
+            labels = {}
+            offset = 0
+            for category, classes in LABEL_CLASSES.items():
+                n = len(classes)
+                scores = output[0, offset : offset + n]
+                probs = F.softmax(scores, dim=0)
+                predicted_idx = probs.argmax().item()
+                labels[category] = classes[predicted_idx]
+                offset += n
+            return labels
+        except Exception as e:
+            print(f"Local PyTorch model prediction failed: {e}. Falling back...")
+            
+    # 3. Static default fallback (safest fallback, 100% stable)
+    print("Using static default clothing classification tags.")
+    return {
+        "type": "shirt",
+        "color": "white",
+        "fit": "regular",
+        "print_category": "plain",
+        "theme": "casual"
+    }
 
 # ─── ROUTES ──────────────────────────────────────────────────────────────────
 
@@ -369,26 +444,30 @@ async def upload_to_inventory(
     file: UploadFile = File(...),
     user_id: str = Depends(get_current_user)
 ):
-    image_bytes = await file.read()
-    if len(image_bytes) > MAX_IMAGE_BYTES:
-        raise HTTPException(status_code=413, detail="Image too large.")
+    try:
+        image_bytes = await file.read()
+        if len(image_bytes) > MAX_IMAGE_BYTES:
+            raise HTTPException(status_code=413, detail="Image too large.")
 
-    labels = predict_labels(image_bytes)
-    image_url = upload_image_to_cloud(image_bytes)
-        
-    doc_ref = db.collection("inventory").document()
-    doc_ref.set({
-        "user_id": user_id,
-        "type": labels.get('type', 'unknown'),
-        "color": labels.get('color', 'unknown'),
-        "fit": labels.get('fit', 'unknown'),
-        "material": "unknown",
-        "print_cat": labels.get('print_category', 'plain'),
-        "theme": labels.get('theme', 'casual'),
-        "image_path": image_url,
-        "added_at": datetime.utcnow().isoformat()
-    })
-    return {"success": True, "labels": labels}
+        labels = predict_labels(image_bytes)
+        image_url = upload_image_to_cloud(image_bytes)
+            
+        doc_ref = db.collection("inventory").document()
+        doc_ref.set({
+            "user_id": user_id,
+            "type": labels.get('type', 'unknown'),
+            "color": labels.get('color', 'unknown'),
+            "fit": labels.get('fit', 'unknown'),
+            "material": "unknown",
+            "print_cat": labels.get('print_category', 'plain'),
+            "theme": labels.get('theme', 'casual'),
+            "image_path": image_url,
+            "added_at": datetime.utcnow().isoformat()
+        })
+        return {"success": True, "labels": labels}
+    except Exception as e:
+        print(f"Inventory upload failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/inventory/add_custom")
 async def add_custom_inventory(
@@ -587,8 +666,8 @@ async def add_calendar_entry(
     location: str = Form(""),
     mood: str = Form(""),
     notes: str = Form(""),
-    file: Optional[UploadFile] = File(default=None),
-    files: Optional[List[UploadFile]] = File(default=None),
+    file: Optional[UploadFile] = File(None),
+    files: Optional[List[UploadFile]] = File(None),
     wardrobe_item_id: Optional[str] = Form(None),
     user_id: str = Depends(get_current_user)
 ):

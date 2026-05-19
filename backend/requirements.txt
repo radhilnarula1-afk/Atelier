@@ -3,9 +3,9 @@ fastapi==0.110.0
 uvicorn[standard]==0.28.0
 python-multipart==0.0.9
 
-# ── ML / Vision (ONNX Runtime CPU build - extremely lightweight, < 10MB memory usage)
-onnxruntime==1.17.1
-numpy>=1.24.0
+# ── ML / Vision (ONNX Runtime CPU build - lightweight, no PyTorch needed) ────
+onnxruntime==1.19.2
+numpy>=1.24.0,<2.0
 pillow==10.2.0
 
 # ── Firebase Admin SDK ───────────────────────────────────────────────────────

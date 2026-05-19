@@ -13,7 +13,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Print dynamic linker dependencies to debug missing libraries
-RUN ldd /usr/local/lib/python3.10/site-packages/onnxruntime/capi/onnxruntime_pybind11_state.so
+RUN python -c "import os, subprocess, glob; capi_dir = os.path.dirname(glob.glob('/usr/local/lib/python*/site-packages/onnxruntime/capi/__init__.py')[0]); so_files = glob.glob(os.path.join(capi_dir, '*pybind*.so')); subprocess.run(['ldd', so_files[0]]) if so_files else print('No SO files found')"
 
 # Verify system dependencies are satisfied for ONNX Runtime
 RUN python -c "import onnxruntime"

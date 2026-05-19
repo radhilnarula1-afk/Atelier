@@ -12,6 +12,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Verify system dependencies are satisfied for ONNX Runtime, and output diagnostics if it fails
+RUN python -c "import onnxruntime" || (ldd /usr/local/lib/python3.10/site-packages/onnxruntime/capi/onnxruntime_pybind11_state.so && exit 1)
+
 # Copy application source
 COPY main.py .
 

@@ -10,7 +10,7 @@ torchvision==0.17.1+cpu
 pillow==10.2.0
 
 # ── Firebase Admin SDK ───────────────────────────────────────────────────────
-firebase-admin==6.5.0
+firebase-admin==7.4.0
 
 # ── Authentication ───────────────────────────────────────────────────────────
 pyjwt==2.8.0

@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.10-slim-bookworm
 
 WORKDIR /app
 
@@ -11,10 +11,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Install Python dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-
-# Verify system dependencies are satisfied for ONNX Runtime using diagnostic helper
-COPY verify_onnx.py .
-RUN python verify_onnx.py
 
 # Copy application source
 COPY main.py .

@@ -2,12 +2,13 @@ import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "",
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "AIzaSyDNEnzcOsu0FKgdt8OUz-9RzYMZ8XV8CmI",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "atelier-2645c.firebaseapp.com",
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "atelier-2645c",
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "",
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || ""
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "atelier-2645c.firebasestorage.app",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "996189344923",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:996189344923:web:8a4aab661a87ed861ba23e",
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "G-0RFCJX7NNB"
 };
 
 // Initialize Firebase only if the config values are set to avoid crash, or fallback gracefully

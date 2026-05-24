@@ -106,21 +106,21 @@ except Exception as e:
     else:
         raise e
 
-# Configure Cloudinary — credentials loaded from environment variables only
-CLOUDINARY_CLOUD_NAME = os.getenv("CLOUDINARY_CLOUD_NAME")
-CLOUDINARY_API_KEY    = os.getenv("CLOUDINARY_API_KEY")
-CLOUDINARY_API_SECRET = os.getenv("CLOUDINARY_API_SECRET")
-
-if CLOUDINARY_CLOUD_NAME and CLOUDINARY_API_KEY and CLOUDINARY_API_SECRET:
-    cloudinary.config(
-        cloud_name = CLOUDINARY_CLOUD_NAME,
-        api_key    = CLOUDINARY_API_KEY,
-        api_secret = CLOUDINARY_API_SECRET,
-        secure     = True
-    )
-    print(f"[Cloudinary] Configured — cloud: {CLOUDINARY_CLOUD_NAME}")
+# Configure Cloudinary — uses CLOUDINARY_URL env var already set in Render
+_cld_url = os.getenv("CLOUDINARY_URL")
+if _cld_url:
+    cloudinary.config(cloudinary_url=_cld_url)
+    print(f"[Cloudinary] Configured via CLOUDINARY_URL ✓")
 else:
-    print("[Cloudinary] WARNING: CLOUDINARY_CLOUD_NAME / API_KEY / API_SECRET not set in environment!")
+    # Fallback: try individual env vars
+    _cn  = os.getenv("CLOUDINARY_CLOUD_NAME")
+    _key = os.getenv("CLOUDINARY_API_KEY")
+    _sec = os.getenv("CLOUDINARY_API_SECRET")
+    if _cn and _key and _sec:
+        cloudinary.config(cloud_name=_cn, api_key=_key, api_secret=_sec, secure=True)
+        print(f"[Cloudinary] Configured via individual env vars ✓")
+    else:
+        print("[Cloudinary] WARNING: No Cloudinary credentials found — images will NOT persist!")
 
 def upload_image_to_cloud(image_bytes: bytes) -> str:
     """

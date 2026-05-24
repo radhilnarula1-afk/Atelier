@@ -110,6 +110,9 @@ except Exception as e:
 CLOUDINARY_URL = os.getenv("CLOUDINARY_URL")
 if CLOUDINARY_URL:
     cloudinary.config(cloudinary_url=CLOUDINARY_URL)
+    print(f"[Cloudinary] Configured OK — URL starts with: {CLOUDINARY_URL[:30]}...")
+else:
+    print("[Cloudinary] WARNING: CLOUDINARY_URL not set — images will use ephemeral local storage!")
 
 def upload_image_to_cloud(image_bytes: bytes) -> str:
     """
@@ -139,6 +142,37 @@ def upload_image_to_cloud(image_bytes: bytes) -> str:
     return f"/uploads/{filename}"
 
 # SQL Database drivers and initialization are deprecated in favor of Firebase Firestore.
+
+# ─── DEBUG ENDPOINTS ─────────────────────────────────────────────────────────
+
+@app.get("/debug/cloudinary")
+def debug_cloudinary():
+    """Test Cloudinary config and upload a tiny 1x1 red pixel image."""
+    url_set = bool(os.getenv("CLOUDINARY_URL"))
+    if not url_set:
+        return {"status": "error", "reason": "CLOUDINARY_URL env var not set"}
+    try:
+        # 1x1 red pixel PNG in bytes
+        import struct, zlib
+        def make_1px_png():
+            def chunk(name, data):
+                c = struct.pack('>I', len(data)) + name + data
+                return c + struct.pack('>I', zlib.crc32(name + data) & 0xffffffff)
+            ihdr = struct.pack('>IIBBBBB', 1, 1, 8, 2, 0, 0, 0)
+            raw  = b'\x00\xff\x00\x00'  # red pixel
+            idat = zlib.compress(raw)
+            return b'\x89PNG\r\n\x1a\n' + chunk(b'IHDR', ihdr) + chunk(b'IDAT', idat) + chunk(b'IEND', b'')
+        pixel = make_1px_png()
+        res = cloudinary.uploader.upload(
+            io.BytesIO(pixel),
+            folder="atelier_debug",
+            resource_type="image",
+            public_id="test_pixel"
+        )
+        url = res.get("secure_url", "")
+        return {"status": "success", "cloudinary_url": url, "message": "Cloudinary is working!"}
+    except Exception as e:
+        return {"status": "error", "reason": str(e)}
 
 # ─── AUTHENTICATION ──────────────────────────────────────────────────────────
 

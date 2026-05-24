@@ -106,35 +106,40 @@ except Exception as e:
     else:
         raise e
 
-# Configure Cloudinary
-CLOUDINARY_URL = os.getenv("CLOUDINARY_URL")
-if CLOUDINARY_URL:
-    cloudinary.config(cloudinary_url=CLOUDINARY_URL)
-    print(f"[Cloudinary] Configured OK — URL starts with: {CLOUDINARY_URL[:30]}...")
-else:
-    print("[Cloudinary] WARNING: CLOUDINARY_URL not set — images will use ephemeral local storage!")
+# Configure Cloudinary — using explicit credentials (more reliable than URL format)
+CLOUDINARY_CLOUD_NAME = os.getenv("CLOUDINARY_CLOUD_NAME", "dwzlgswu6")
+CLOUDINARY_API_KEY    = os.getenv("CLOUDINARY_API_KEY",    "716251675377974")
+CLOUDINARY_API_SECRET = os.getenv("CLOUDINARY_API_SECRET", "Qd1Zl9dbBEQx3ZrxB5zOtENQG08")
+
+cloudinary.config(
+    cloud_name = CLOUDINARY_CLOUD_NAME,
+    api_key    = CLOUDINARY_API_KEY,
+    api_secret = CLOUDINARY_API_SECRET,
+    secure     = True
+)
+print(f"[Cloudinary] Configured — cloud: {CLOUDINARY_CLOUD_NAME}, key: {CLOUDINARY_API_KEY[:6]}...")
 
 def upload_image_to_cloud(image_bytes: bytes) -> str:
     """
-    Uploads image bytes to Cloudinary.
-    Falls back to saving to local uploads folder if Cloudinary is not configured.
+    Uploads image bytes to Cloudinary CDN.
+    Falls back to local storage only if Cloudinary throws an exception.
     """
-    if os.getenv("CLOUDINARY_URL"):
-        try:
-            res = cloudinary.uploader.upload(
-                io.BytesIO(image_bytes),          # ← wrap bytes in file-like object
-                folder="atelier_wardrobe",
-                resource_type="image",
-                public_id=uuid.uuid4().hex        # ← unique filename to avoid collisions
-            )
-            url = res.get("secure_url", "")
-            if url:
-                print(f"Cloudinary upload success: {url}")
-                return url
-            print("Cloudinary upload returned no URL.")
-        except Exception as e:
-            print(f"Cloudinary upload failed: {e}")
-    # Fallback: Save locally
+    try:
+        res = cloudinary.uploader.upload(
+            io.BytesIO(image_bytes),
+            folder="atelier_wardrobe",
+            resource_type="image",
+            public_id=uuid.uuid4().hex
+        )
+        url = res.get("secure_url", "")
+        if url:
+            print(f"[Cloudinary] Upload success: {url}")
+            return url
+        print("[Cloudinary] Upload returned no URL — falling back to local.")
+    except Exception as e:
+        print(f"[Cloudinary] Upload failed: {e} — falling back to local storage.")
+
+    # Fallback: local disk (ephemeral — lost on container restart)
     filename = f"{uuid.uuid4().hex}.jpg"
     filepath = os.path.join("uploads", filename)
     with open(filepath, "wb") as f:

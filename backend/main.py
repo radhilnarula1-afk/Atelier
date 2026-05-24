@@ -106,18 +106,21 @@ except Exception as e:
     else:
         raise e
 
-# Configure Cloudinary — using explicit credentials (more reliable than URL format)
-CLOUDINARY_CLOUD_NAME = os.getenv("CLOUDINARY_CLOUD_NAME", "dwzlgswu6")
-CLOUDINARY_API_KEY    = os.getenv("CLOUDINARY_API_KEY",    "716251675377974")
-CLOUDINARY_API_SECRET = os.getenv("CLOUDINARY_API_SECRET", "Qd1Zl9dbBEQx3ZrxB5zOtENQG08")
+# Configure Cloudinary — credentials loaded from environment variables only
+CLOUDINARY_CLOUD_NAME = os.getenv("CLOUDINARY_CLOUD_NAME")
+CLOUDINARY_API_KEY    = os.getenv("CLOUDINARY_API_KEY")
+CLOUDINARY_API_SECRET = os.getenv("CLOUDINARY_API_SECRET")
 
-cloudinary.config(
-    cloud_name = CLOUDINARY_CLOUD_NAME,
-    api_key    = CLOUDINARY_API_KEY,
-    api_secret = CLOUDINARY_API_SECRET,
-    secure     = True
-)
-print(f"[Cloudinary] Configured — cloud: {CLOUDINARY_CLOUD_NAME}, key: {CLOUDINARY_API_KEY[:6]}...")
+if CLOUDINARY_CLOUD_NAME and CLOUDINARY_API_KEY and CLOUDINARY_API_SECRET:
+    cloudinary.config(
+        cloud_name = CLOUDINARY_CLOUD_NAME,
+        api_key    = CLOUDINARY_API_KEY,
+        api_secret = CLOUDINARY_API_SECRET,
+        secure     = True
+    )
+    print(f"[Cloudinary] Configured — cloud: {CLOUDINARY_CLOUD_NAME}")
+else:
+    print("[Cloudinary] WARNING: CLOUDINARY_CLOUD_NAME / API_KEY / API_SECRET not set in environment!")
 
 def upload_image_to_cloud(image_bytes: bytes) -> str:
     """
